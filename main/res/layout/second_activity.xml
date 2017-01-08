@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppTheme.TestTheme"
+    android:scrollbarThumbHorizontal="@style/Theme.AppTheme.TestTheme"
+    android:scrollbarThumbVertical="@style/Theme.AppTheme.TestTheme">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10pt">
+
+        <EditText
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/etFirst"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/etSecond"
+            android:clickable="false"
+            android:editable="false"
+            android:cursorVisible="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinFrom" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinTo"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <Button
+        android:text="Convert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnConvert" />
+
+</LinearLayout>
